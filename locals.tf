@@ -6,6 +6,7 @@ locals {
 
   virtual_network_name        = "vnet-avmlab-${local.unique_postfix}"
   network_security_group_name = "nsg-avmlab-${local.unique_postfix}"
+  key_vault_name              = "kv-avmlab-${format("%.16s", local.unique_postfix)}"
 }
 
 # Caluculate the CIDR for the subnets
