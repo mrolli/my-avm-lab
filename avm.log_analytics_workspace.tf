@@ -6,4 +6,5 @@ module "log_analytics_workspace" {
   location            = var.location
   resource_group_name = module.resource_group.name
   tags                = var.tags
+  enable_telemetry    = var.enable_telemetry
 }

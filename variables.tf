@@ -62,3 +62,9 @@ variable "tags" {
   type        = map(string)
   description = "A map of tags to add to all resources"
 }
+
+variable "enable_telemetry" {
+  type        = bool
+  default     = true
+  description = "Flag to enable/disable telemetry"
+}
