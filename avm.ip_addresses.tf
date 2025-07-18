@@ -4,7 +4,5 @@ module "avm-utl-network-ip-addresses" {
 
   address_space    = var.address_space
   address_prefixes = { for key, value in var.subnets : key => value.size }
-
   enable_telemetry = var.enable_telemetry
 }
-
